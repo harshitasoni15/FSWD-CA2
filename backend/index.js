@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/Inventory',(req,res)=>{
-    const(name,description,price,quantity) = req.body;
+    const(name,iption,price,quantity) = req.body;
     const newItem = new InventoryItem={
         name,
         description,
